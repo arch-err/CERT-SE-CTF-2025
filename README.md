@@ -15,7 +15,7 @@ Please note, we will only accept one response per person. Make sure to find as m
 
 # Challenges
 
-**Flags:** (2/9)
+**Flags:** (3/9)
 
 ## strings_or_cat
 1. `strings *.pcap | rg -i CTF'\['`
@@ -25,20 +25,41 @@ Please note, we will only accept one response per person. Make sure to find as m
 
 ## hexahue
 1. Find the [modified cert-se logo](./CERT-SE.jpg) in the pcap-file
-2. Notice that it's hexahue-encoded/uses the hexahue-cipher.
+> Open pcap in WS > File > Export Objects > HTTP
+2. Recognize that it's hexahue-encoded/uses the hexahue-cipher.
+> I've seen this before
 3. Search the internet for a key, [this](./key.jpg) will work!
 4. Decode manually (tedious, but it works)
 
 ***Flag: `ctf[couleurshexadecimales]`***
 
 
-## <name>
-1.
+## UDP Keylogger
+```python
+#!/usr/bin/env python solve.py | grep -oP "ctf\[.*\]" | tee flag.txt #
+from scapy.all import rdpcap, UDP
+import base64
 
-***Flag: `<++>`***
+packets = rdpcap('../../cert-se_ctf2025.pcap')
+data = []
+
+for pkt in packets:
+    if pkt.haslayer(UDP):
+        payload = bytes(pkt[UDP].payload)
+        if payload:
+            try:
+                decoded = base64.b64decode(payload)
+                data.append(decoded.decode('utf-8', errors='ignore'))
+            except:
+                pass
+
+print(''.join(data))
+```
+
+***Flag: `ctf[keylog_over_udp]`***
 
 
-## <name>
+## Monstrum Piscis Tres
 1.
 
 ***Flag: `<++>`***
