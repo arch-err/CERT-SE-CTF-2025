@@ -1,0 +1,19 @@
+im playing a ctf where ive been given access to a disk.
+Ive ran some initial commands to analyze it:
+
+sudo fdisk -lo SD_Card.img
+Disk SD_Card.img: 20 MiB, 20971520 bytes, 40960 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000000
+
+file SD_Card.img
+SD_Card.img: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "mkfs.fat", sectors/cluster 4, reserved sectors 4, root entries 512, sectors 40960 (volumes <=32 MB), Media descriptor 0xf8, sectors/FAT 40, sectors/track 32, heads 64, hidden sectors 2048, reserved 0x1, serial number 0xaaf966d1, label: "PHOTOS     ", FAT (16 bit)
+
+fls -o 2048 SD_Card.img -r
+Possible encryption detected (High entropy (7.99))
+
+
+any ideas on what i could try next?
