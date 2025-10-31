@@ -121,3 +121,9 @@ Well, this was a tough nut to crack! I know that I may be looking in the complet
 8. Read the flag written out in the restored [`mystery.jpg`](./mystery.jpg) image -> [`flag.txt`](./flag.txt)
 
 ***Flag: `ctf[im_really_alive]`***
+
+## The Tenth Challenge
+So, I played this CTF all throughout October and on the 31st, the deadline to hand it in, I re-read the CTF descripthon. *...contains a total of ten flags...*. **TEN?!** I had always thought there were only nine?! Ahh dammit, I guess I'll have to go back and look through all of the loot I've gathered up until now... After hours of searching through what I already have I've come to the conclusion that I've stared too much at this to be able to find any more flags. The only thing that maybe could count as a tenth flag is if the "`cool_flagz`" thingy from `ctf.txt`, but since it sounds like a red herring I ***really*** hope that wasn't one of the ten real flags.
+Soooo, I guess that's all. Fun CTF overall though!
+
+***Flag: `ctf[cool_flagz]`???***
