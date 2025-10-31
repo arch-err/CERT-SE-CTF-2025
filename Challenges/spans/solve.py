@@ -11,12 +11,12 @@ for line in file:
     elif "span:nth-of-type(" in line:
         lighter_spans = sorted(line.strip().replace("span:nth-of-type(", "").replace(")", "").split(", "))
 # print(num_of_spans)
-# print(lighter_spans)
+print(lighter_spans)
 result = ""
 for i in range(num_of_spans):
     if str(i) in lighter_spans:
-        result += "0"
+        result += "1"
         continue
-    result += "1"
+    result += "0"
 
 print(result)

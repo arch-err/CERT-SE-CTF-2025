@@ -1,1 +1,1 @@
-ctf[couleurshexadecimales]
+ctf[strings_or_cat?]

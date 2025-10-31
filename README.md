@@ -104,9 +104,10 @@ hashcat -m 0 -a 0 983e3a1fbb4232fff96282ab9a37f89a ./wordlist.txt
 
 
 ## Spans
-1.
+***Sigh...***
+Well, this was a tough nut to crack! I know that I may be looking in the completely wrong direction, that is a possibility. Since this CTF doesn't follow the standard "Jeopardy" format that CTFs usually have, there is no clear indication as to where the challenges actually are. However, I have looked through the `pcap` thoroughly, and since I found 8 flags from all of the other leads, this HTML-span-thingy is either a red herring or the final challenge. Soo, I started digging, and digging... aaaand digging some more. I've had multiple friends and colleagues sanity-check me on this one, but I just can't find a flag from this thing. Looking at the lighter and darker spans as 1s and 0s, I've tried binary, bacon, morse, EVERYTHING!! Mapping it as a 64x64 grid and scanning it as some type of code? Nah... Staring at it endlessly to see if I can piece together visually. Nope, I'm done with this now. To be fair, this is an extremely obscure challenge, and I've got other CTFs to play too... *\*cough\* huntress... \*cough\**
 
-***Flag: `<++>`***
+***Flag: `not found`***
 
 
 ## SD Card

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #!/usr/bin/env python solve.py | grep -oP "ctf\[.*\]" | tee flag.txt #
 from scapy.all import rdpcap, UDP
 import base64

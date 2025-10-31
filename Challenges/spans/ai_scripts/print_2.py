@@ -15,10 +15,11 @@ px = img.load()
 for r in range(H):
     for c in range(W):
         if grid[r][c]:
-            px[c, r] = (180, 255, 180)  # light green
+            px[c, r] = (255, 255, 255)  # light green
 img = img.resize((640, 640), Image.NEAREST)
 img.save("out.png")
 
+exit(0)
 # Optional: print ASCII to quick-peek
 for r in range(H):
     print("".join("█" if grid[r][c] else "░" for c in range(W)))
